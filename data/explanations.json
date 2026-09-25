@@ -1,0 +1,197 @@
+{
+  "kyushu-2026:acct-lakeshore:REVIEW NOW": {
+    "sentences": [
+      "Lakeshore Drivetrain Supply is potentially exposed due to the confirmed damage at Aisin's Kumamoto plant, which is a critical supplier with no known alternate [C3][E5].",
+      "Aisin has reported plans to resume production once safety and quality are confirmed, but the restart date remains unknown [C4].",
+      "The production halt at Aisin's facilities could impact Lakeshore Drivetrain Supply's operations, as the dependency is critical and no alternate supplier is known [C20][E5]."
+    ],
+    "actions": [
+      "verify supplier operational status",
+      "contact account",
+      "review business-continuity / alternate sourcing",
+      "monitor event"
+    ],
+    "removed": 0,
+    "generated_at": "2026-09-25T17:50:57.363Z"
+  },
+  "kyushu-2026:acct-voltaic:MONITOR": {
+    "sentences": [
+      "Voltaic Mobility is potentially exposed due to its critical dependency on Renesas microcontrollers, with no known alternate supplier [E6].",
+      "The Renesas Kawajiri plant, a key supplier to Voltaic Mobility, has reportedly halted production following the Kyushu earthquake [C42][C56].",
+      "Damage to Renesas' facilities includes fallen ceiling panels, cracks in walls, and water leaks, which may impact supply continuity [C9].",
+      "The timeline for resumption of operations at Renesas' facilities remains uncertain, with phased reopening reported to begin in August [C10]."
+    ],
+    "actions": [
+      "verify supplier operational status",
+      "contact account",
+      "review business-continuity / alternate sourcing",
+      "monitor event"
+    ],
+    "removed": 0,
+    "generated_at": "2026-09-25T17:50:59.914Z"
+  },
+  "kyushu-2026:acct-brightline:MONITOR": {
+    "sentences": [
+      "Brightline Robotics is potentially exposed due to its moderate dependency on Renesas microcontrollers, which are affected by the reported damage at the Renesas Kawajiri plant [C9][E7].",
+      "The operational status of the Renesas Kawajiri plant remains uncertain, as production has reportedly halted since the earthquake [C42][C56].",
+      "An alternate supplier is known, but the inventory buffer at Brightline Robotics for this dependency is unknown [E7]."
+    ],
+    "actions": [
+      "verify supplier operational status",
+      "contact account",
+      "review business-continuity / alternate sourcing",
+      "monitor event"
+    ],
+    "removed": 0,
+    "generated_at": "2026-09-25T17:51:02.142Z"
+  },
+  "kyushu-2026:acct-harborline:MONITOR": {
+    "sentences": [
+      "Harborline Auto Logistics is potentially exposed due to its role in shipping Toyota Kyushu vehicle exports, following the confirmed production halt at Toyota's Kyushu plants [C5][C18][C28][E8].",
+      "The dependency on Toyota's Miyata plant is moderate, and the availability of an alternate supplier is unknown [E8].",
+      "The impact of the Kyushu Earthquake 2026 on Harborline's operations is currently being monitored, with no direct exposure reported [E8]."
+    ],
+    "actions": [
+      "verify supplier operational status",
+      "contact account",
+      "review business-continuity / alternate sourcing",
+      "monitor event"
+    ],
+    "removed": 0,
+    "generated_at": "2026-09-25T17:51:04.534Z"
+  },
+  "kyushu-2026:acct-kyushu-warehousing:MONITOR": {
+    "sentences": [
+      "Kyushu Precision Warehousing is potentially exposed due to its insured warehouse located in the Kyushu region, which experienced a 7.1-magnitude earthquake on July 28 [C1][E9].",
+      "The damage status of the insured location is currently unknown, necessitating further investigation [E9].",
+      "Given the criticality of the location, we recommend review of business-continuity plans and alternate sourcing options [E9]."
+    ],
+    "actions": [
+      "contact account",
+      "review business-continuity / alternate sourcing",
+      "monitor event"
+    ],
+    "removed": 0,
+    "generated_at": "2026-09-25T17:51:06.589Z"
+  },
+  "kyushu-2026:acct-lonestar:MONITOR": {
+    "sentences": [
+      "Lone Star Moto Distribution is potentially exposed due to the reported halt in production at Honda's Ozu town motorcycle factory following the Kyushu Earthquake 2026 [C32][E18].",
+      "The factory has reportedly sustained damage requiring repairs, which may impact supply continuity [C33][E18].",
+      "The duration of the disruption and the inventory buffer at Lone Star Moto Distribution are currently unknown [E18]."
+    ],
+    "actions": [
+      "monitor event",
+      "contact account",
+      "review business-continuity / alternate sourcing"
+    ],
+    "removed": 0,
+    "generated_at": "2026-09-25T17:51:08.112Z"
+  },
+  "kyushu-2026:acct-pacific-crest:MONITOR": {
+    "sentences": [
+      "Pacific Crest Auto Distributors is potentially exposed due to its dependency on Daihatsu vehicles built in Kyushu, where production has been halted following a reported earthquake [C29][E19].",
+      "The shutdown of Daihatsu's Oita and Kurume factories is reported to last until July 31, but the confirmed restart date remains unknown [C29].",
+      "The availability of an alternate supplier for Pacific Crest Auto Distributors is currently unknown, which may affect their supply chain resilience [E19]."
+    ],
+    "actions": [
+      "verify supplier operational status",
+      "contact account",
+      "review business-continuity / alternate sourcing",
+      "monitor event"
+    ],
+    "removed": 0,
+    "generated_at": "2026-09-25T17:51:09.854Z"
+  },
+  "kyushu-2026:acct-harborline:REVIEW NOW": {
+    "sentences": [
+      "Harborline Auto Logistics is potentially exposed due to the confirmed production halt at Toyota's Kyushu plants, which it ships for [C5][C18][E8].",
+      "The disruption is assumed to persist, and an alternate supplier for this dependency is unknown [E8].",
+      "The dependency was first observed during the Kumamoto 2016 earthquakes, indicating a historical pattern of vulnerability [C43][C50][E8]."
+    ],
+    "actions": [
+      "contact account",
+      "review business-continuity / alternate sourcing",
+      "escalate to risk engineering",
+      "monitor event"
+    ],
+    "removed": 0,
+    "generated_at": "2026-09-25T17:51:14.427Z"
+  },
+  "kumamoto-2016:acct-lakeshore:MONITOR": {
+    "sentences": [
+      "Lakeshore Drivetrain Supply is potentially exposed due to its critical dependency on Aisin's Kumamoto plant, which has halted operations following the earthquakes [C41][E5].",
+      "There is no known alternate supplier for the transmission parts imported by Lakeshore Drivetrain Supply, increasing the risk of supply chain disruption [E5].",
+      "The extent of the disruption is currently unknown, as the restart date for Aisin's operations has not been confirmed [C49]."
+    ],
+    "actions": [
+      "verify supplier operational status",
+      "contact account",
+      "review business-continuity / alternate sourcing",
+      "monitor event"
+    ],
+    "removed": 0,
+    "generated_at": "2026-09-25T17:51:20.325Z"
+  },
+  "kumamoto-2016:acct-voltaic:MONITOR": {
+    "sentences": [
+      "Voltaic Mobility is potentially exposed due to its critical dependency on Renesas microcontrollers, with no known alternate supplier [E6].",
+      "Operations at the Renesas Kawajiri plant have reportedly halted since the earthquake, impacting the supply chain [C42][C56].",
+      "The duration of the disruption and the inventory buffer at Voltaic Mobility are unknown, increasing the uncertainty of the impact [C42][C56]."
+    ],
+    "actions": [
+      "verify supplier operational status",
+      "contact account",
+      "review business-continuity / alternate sourcing",
+      "monitor event"
+    ],
+    "removed": 0,
+    "generated_at": "2026-09-25T17:51:22.338Z"
+  },
+  "kumamoto-2016:acct-brightline:MONITOR": {
+    "sentences": [
+      "Brightline Robotics is potentially exposed due to halted operations at the Renesas Kawajiri plant following the Kumamoto Earthquakes 2016 [C42][C56].",
+      "The dependency on Renesas microcontrollers is moderate, and an alternate supplier is known, which may mitigate some risk [E7].",
+      "The duration of the disruption and the inventory buffer at Brightline Robotics are currently unknown [C42][C56]."
+    ],
+    "actions": [
+      "verify supplier operational status",
+      "contact account",
+      "review business-continuity / alternate sourcing",
+      "monitor event"
+    ],
+    "removed": 0,
+    "generated_at": "2026-09-25T17:51:24.037Z"
+  },
+  "kumamoto-2016:acct-harborline:MONITOR": {
+    "sentences": [
+      "Harborline Auto Logistics is potentially exposed due to its role in shipping Toyota Kyushu vehicle exports, which are affected by the Kumamoto Earthquakes 2016 [E8].",
+      "Toyota's production has been reported as halted due to supply chain disruptions, impacting their operations in the Kyushu area [C43][C50].",
+      "The availability of an alternate supplier for Harborline Auto Logistics is unknown, which may affect their ability to mitigate the impact [E8].",
+      "Toyota is expected to resume production at affected assembly lines between April 25 and 28, but the confirmed restart date for the specific plant is unknown [C51][C64]."
+    ],
+    "actions": [
+      "verify supplier operational status",
+      "contact account",
+      "review business-continuity / alternate sourcing",
+      "monitor event"
+    ],
+    "removed": 0,
+    "generated_at": "2026-09-25T17:51:26.945Z"
+  },
+  "kumamoto-2016:acct-kyushu-warehousing:MONITOR": {
+    "sentences": [
+      "Kyushu Precision Warehousing is potentially exposed due to its insured warehouse located in the Kyushu region, which experienced significant seismic activity [E9][C40].",
+      "Two powerful earthquakes were reported to have struck the southwestern island of Kyushu on 14 and 16 April, affecting the area where the warehouse is situated [C40][C54].",
+      "The damage status of the insured location remains unknown, necessitating further investigation [E9]."
+    ],
+    "actions": [
+      "contact account",
+      "verify supplier operational status",
+      "review business-continuity / alternate sourcing",
+      "monitor event"
+    ],
+    "removed": 0,
+    "generated_at": "2026-09-25T17:51:28.686Z"
+  }
+}

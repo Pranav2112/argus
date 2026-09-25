@@ -1,0 +1,162 @@
+{
+  "persist=false": {
+    "acct-lakeshore": {
+      "tier": "REVIEW NOW",
+      "memory": true,
+      "path": [
+        "aisin-kumamoto",
+        "acct-lakeshore"
+      ]
+    },
+    "acct-voltaic": {
+      "tier": "MONITOR",
+      "memory": true,
+      "path": [
+        "renesas-kawajiri",
+        "acct-voltaic"
+      ]
+    },
+    "acct-brightline": {
+      "tier": "MONITOR",
+      "memory": true,
+      "path": [
+        "renesas-kawajiri",
+        "acct-brightline"
+      ]
+    },
+    "acct-harborline": {
+      "tier": "MONITOR",
+      "memory": true,
+      "path": [
+        "toyota-kyushu-miyata",
+        "acct-harborline"
+      ]
+    },
+    "acct-kyushu-warehousing": {
+      "tier": "MONITOR",
+      "memory": false,
+      "path": []
+    },
+    "acct-lonestar": {
+      "tier": "MONITOR",
+      "memory": false,
+      "path": [
+        "honda-kumamoto",
+        "acct-lonestar"
+      ]
+    },
+    "acct-pacific-crest": {
+      "tier": "MONITOR",
+      "memory": false,
+      "path": [
+        "daihatsu-kyushu",
+        "acct-pacific-crest"
+      ]
+    },
+    "acct-prairie": {
+      "tier": "NO ACTION",
+      "memory": false,
+      "path": []
+    },
+    "acct-cascade": {
+      "tier": "NO ACTION",
+      "memory": false,
+      "path": []
+    },
+    "acct-northfield": {
+      "tier": "NO ACTION",
+      "memory": false,
+      "path": []
+    },
+    "acct-keystone": {
+      "tier": "NO ACTION",
+      "memory": false,
+      "path": []
+    },
+    "acct-ridgeway": {
+      "tier": "NO ACTION",
+      "memory": false,
+      "path": []
+    }
+  },
+  "persist=true": {
+    "acct-lakeshore": {
+      "tier": "REVIEW NOW",
+      "memory": true,
+      "path": [
+        "aisin-kumamoto",
+        "acct-lakeshore"
+      ]
+    },
+    "acct-harborline": {
+      "tier": "REVIEW NOW",
+      "memory": true,
+      "path": [
+        "toyota-kyushu-miyata",
+        "acct-harborline"
+      ]
+    },
+    "acct-voltaic": {
+      "tier": "MONITOR",
+      "memory": true,
+      "path": [
+        "renesas-kawajiri",
+        "acct-voltaic"
+      ]
+    },
+    "acct-brightline": {
+      "tier": "MONITOR",
+      "memory": true,
+      "path": [
+        "renesas-kawajiri",
+        "acct-brightline"
+      ]
+    },
+    "acct-kyushu-warehousing": {
+      "tier": "MONITOR",
+      "memory": false,
+      "path": []
+    },
+    "acct-lonestar": {
+      "tier": "MONITOR",
+      "memory": false,
+      "path": [
+        "honda-kumamoto",
+        "acct-lonestar"
+      ]
+    },
+    "acct-pacific-crest": {
+      "tier": "MONITOR",
+      "memory": false,
+      "path": [
+        "daihatsu-kyushu",
+        "acct-pacific-crest"
+      ]
+    },
+    "acct-prairie": {
+      "tier": "NO ACTION",
+      "memory": false,
+      "path": []
+    },
+    "acct-cascade": {
+      "tier": "NO ACTION",
+      "memory": false,
+      "path": []
+    },
+    "acct-northfield": {
+      "tier": "NO ACTION",
+      "memory": false,
+      "path": []
+    },
+    "acct-keystone": {
+      "tier": "NO ACTION",
+      "memory": false,
+      "path": []
+    },
+    "acct-ridgeway": {
+      "tier": "NO ACTION",
+      "memory": false,
+      "path": []
+    }
+  }
+}

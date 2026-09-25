@@ -1,0 +1,46 @@
+[
+  {
+    "id": "kyushu-2026",
+    "title": "Kyushu Earthquake 2026",
+    "short_title": "Kyushu earthquake",
+    "hazard": "earthquake",
+    "occurred_at": "2026-07-28T07:27:14.640Z",
+    "lat": 32.6043,
+    "lon": 130.6269,
+    "magnitude": 6.8,
+    "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgb9",
+    "tier": 1,
+    "status": "CONFIRMED",
+    "region": "kyushu"
+  },
+  {
+    "id": "kumamoto-2016",
+    "title": "Kumamoto Earthquakes 2016",
+    "short_title": "Kumamoto earthquakes",
+    "hazard": "earthquake",
+    "occurred_at": "2016-04-15T16:25:06.220Z",
+    "lat": 32.7906,
+    "lon": 130.7543,
+    "magnitude": 7,
+    "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us20005iis",
+    "tier": 1,
+    "status": "CONFIRMED",
+    "region": "kyushu"
+  },
+  {
+    "id": "taiwan-2024",
+    "title": "Taiwan (Hualien) Earthquake 2024",
+    "short_title": "Taiwan earthquake",
+    "hazard": "earthquake",
+    "occurred_at": "2024-04-02T23:58:12.173Z",
+    "lat": 23.8356,
+    "lon": 121.5976,
+    "magnitude": 7.4,
+    "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000m9g4",
+    "tier": 1,
+    "status": "CONFIRMED",
+    "region": "taiwan",
+    "label": "de-escalation example",
+    "demo": false
+  }
+]

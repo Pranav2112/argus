@@ -1,0 +1,42 @@
+{
+  "kyushu-2026:false:acct-lakeshore=REVIEW NOW,acct-voltaic=MONITOR,acct-brightline=MONITOR,acct-harborline=MONITOR,acct-kyushu-warehousing=MONITOR,acct-lonestar=MONITOR,acct-pacific-crest=MONITOR": {
+    "sentences": [
+      "Lakeshore Drivetrain Supply needs immediate review due to confirmed disruptions at Aisin Kumamoto, which is a critical supplier with no known alternate [C3][E5].",
+      "Voltaic Mobility and Brightline Robotics should be monitored as they are potentially exposed to reported disruptions at Renesas Kawajiri, with critical and moderate dependencies respectively [C9][E6][E7].",
+      "Harborline Auto Logistics is also potentially exposed due to confirmed disruptions at Toyota Kyushu (Miyata), with moderate dependency and unknown alternate suppliers [C5][E8].",
+      "Kyushu Precision Warehousing is directly exposed as it is located within the affected region, but the damage status remains unknown [C1][E9]."
+    ],
+    "removed": 0,
+    "generated_at": "2026-09-25T17:50:55.183Z"
+  },
+  "kyushu-2026:true:acct-lakeshore=REVIEW NOW,acct-harborline=REVIEW NOW,acct-voltaic=MONITOR,acct-brightline=MONITOR,acct-kyushu-warehousing=MONITOR,acct-lonestar=MONITOR,acct-pacific-crest=MONITOR": {
+    "sentences": [
+      "Lakeshore Drivetrain Supply and Harborline Auto Logistics accounts need review due to confirmed disruptions at Aisin Kumamoto and Toyota Kyushu (Miyata), respectively, with critical dependencies and no known alternate suppliers [C3][C5][E5][E8].",
+      "Voltaic Mobility and Brightline Robotics are potentially exposed due to reported disruptions at Renesas Kawajiri, with critical and moderate dependencies, respectively, and unknown alternate suppliers [C9][E6][E7].",
+      "Kyushu Precision Warehousing is directly exposed as it is located within the affected region, but the damage status is unknown [C1][E9].",
+      "Lone Star Moto Distribution and Pacific Crest Auto Distributors are potentially exposed due to reported disruptions at Honda Kumamoto and Daihatsu Kyushu, with moderate dependencies and known or unknown alternate suppliers [C32][C29][E18][E19]."
+    ],
+    "removed": 0,
+    "generated_at": "2026-09-25T17:51:12.815Z"
+  },
+  "kumamoto-2016:false:acct-lakeshore=MONITOR,acct-voltaic=MONITOR,acct-brightline=MONITOR,acct-harborline=MONITOR,acct-kyushu-warehousing=MONITOR": {
+    "sentences": [
+      "Lakeshore Drivetrain Supply, Voltaic Mobility, Brightline Robotics, and Harborline Auto Logistics are potentially exposed due to reported disruptions at their critical suppliers, and we recommend review of these accounts [C41][C42][C43][E5][E6][E7][E8].",
+      "Kyushu Precision Warehousing is directly exposed as it is located within the affected region, and its damage status remains unknown [C40][E9].",
+      "The confirmed restart dates for Aisin Kumamoto, Renesas Kawajiri, and Toyota Kyushu (Miyata) are unknown, impacting the assessment of disruption duration [C49][C51][C64].",
+      "Alternate suppliers for Voltaic Mobility and Harborline Auto Logistics are unknown, which may affect their supply chain resilience [E6][E8]."
+    ],
+    "removed": 0,
+    "generated_at": "2026-09-25T17:51:17.078Z"
+  },
+  "kumamoto-2016:true:acct-lakeshore=MONITOR,acct-voltaic=MONITOR,acct-brightline=MONITOR,acct-harborline=MONITOR,acct-kyushu-warehousing=MONITOR": {
+    "sentences": [
+      "Lakeshore Drivetrain Supply is potentially exposed due to reported disruptions at Aisin Kumamoto, with no known alternate supplier, and should be reviewed for potential impacts [C41][E5].",
+      "Voltaic Mobility requires review due to reported disruptions at Renesas Kawajiri and an unknown alternate supplier, which could affect their operations [C42][E6].",
+      "Brightline Robotics is potentially exposed due to reported disruptions at Renesas Kawajiri, though an alternate supplier is known, and should be monitored for any impacts [C42][E7].",
+      "Harborline Auto Logistics should be reviewed due to reported disruptions at Toyota Kyushu (Miyata) and an unknown alternate supplier, which may affect their supply chain [C43][E8]."
+    ],
+    "removed": 0,
+    "generated_at": "2026-09-25T17:51:30.625Z"
+  }
+}

@@ -1,26 +1,75 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-bg: #0b0e13;
+  --color-panel: #11151c;
+  --color-panel2: #161b24;
+  --color-line: #232a36;
+  --color-ink: #d6dbe3;
+  --color-dim: #7d8797;
+  --color-accent: #5aa9e6;
+  --color-review: #e5484d;
+  --color-monitor: #e2a336;
+  --color-noaction: #4f9d7a;
+  --font-sans: ui-sans-serif, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.leaflet-container {
+  background: #0b0e13 !important;
+  font-family: var(--font-mono);
+}
+.leaflet-tooltip {
+  background: #11151c;
+  color: #d6dbe3;
+  border: 1px solid #232a36;
+  font-size: 11px;
+  font-family: var(--font-mono);
+  box-shadow: none;
+}
+.leaflet-tooltip:before {
+  display: none;
+}
+.leaflet-control-attribution {
+  background: rgba(11, 14, 19, 0.7) !important;
+  color: #7d8797 !important;
+  font-size: 9px !important;
+}
+.leaflet-control-attribution a {
+  color: #7d8797 !important;
+}
+
+.react-flow__attribution {
+  display: none;
+}
+
+@keyframes argus-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+    background: rgba(90, 169, 230, 0.18);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    background: transparent;
   }
 }
+.argus-log {
+  animation: argus-in 0.6s ease-out;
+}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #232a36;
 }

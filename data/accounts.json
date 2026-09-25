@@ -1,0 +1,15 @@
+[
+  { "id": "acct-lakeshore", "name": "Lakeshore Drivetrain Supply", "location": "Ohio, US", "lat": 41.50, "lon": -81.69, "description": "Imports Aisin transmission parts. Critical dependency, no known alternate supplier.", "synthetic": true },
+  { "id": "acct-voltaic", "name": "Voltaic Mobility", "location": "Michigan, US", "lat": 42.33, "lon": -83.05, "description": "EV startup; Renesas microcontrollers. Critical dependency, alternate supplier UNKNOWN.", "synthetic": true },
+  { "id": "acct-brightline", "name": "Brightline Robotics", "location": "Massachusetts, US", "lat": 42.36, "lon": -71.06, "description": "Renesas microcontrollers. Moderate dependency, alternate supplier known.", "synthetic": true },
+  { "id": "acct-harborline", "name": "Harborline Auto Logistics", "location": "California, US", "lat": 33.77, "lon": -118.19, "description": "Ships Toyota Kyushu vehicle exports. Moderate dependency.", "synthetic": true },
+  { "id": "acct-kyushu-warehousing", "name": "Kyushu Precision Warehousing", "location": "Fukuoka, JP", "lat": 33.59, "lon": 130.40, "description": "Owns an insured warehouse inside the Kyushu region (direct exposure).", "synthetic": true },
+  { "id": "acct-prairie", "name": "Prairie Home Goods", "location": "Kansas, US", "lat": 37.69, "lon": -97.34, "description": "No Japan dependencies. Control case.", "synthetic": true },
+  { "id": "acct-cascade", "name": "Cascade Sensor Systems", "location": "Oregon, US", "lat": 45.52, "lon": -122.68, "description": "Automotive sensor modules using MCUs fabbed at TSMC Kumamoto. Critical dependency, alternate supplier UNKNOWN.", "synthetic": true },
+  { "id": "acct-northfield", "name": "Northfield Imaging", "location": "California, US", "lat": 37.34, "lon": -121.89, "description": "Camera modules built on Sony Kumamoto image sensors. Critical dependency, no known alternate supplier.", "synthetic": true },
+  { "id": "acct-keystone", "name": "Keystone Fab Services", "location": "Arizona, US", "lat": 33.45, "lon": -112.07, "description": "Semiconductor tool maintenance; Tokyo Electron spare parts. Moderate dependency.", "synthetic": true },
+  { "id": "acct-ridgeway", "name": "Ridgeway Powersports", "location": "Wisconsin, US", "lat": 43.04, "lon": -87.91, "description": "Powersports assembler; FCC clutch packs from Uki. Critical dependency, no known alternate supplier.", "synthetic": true },
+  { "id": "acct-lonestar", "name": "Lone Star Moto Distribution", "location": "Texas, US", "lat": 32.78, "lon": -96.80, "description": "Distributes Kumamoto-built Honda motorcycles. Moderate dependency, alternate supply known.", "synthetic": true },
+  { "id": "acct-pacific-crest", "name": "Pacific Crest Auto Distributors", "location": "Vancouver, CA", "lat": 49.28, "lon": -123.12, "description": "Imports Daihatsu vehicles built in Kyushu. Moderate dependency.", "synthetic": true },
+  { "id": "acct-northwind", "name": "Northwind Electronics", "location": "Texas, US", "lat": 30.27, "lon": -97.74, "description": "Designs control electronics built on chips fabbed at TSMC Hsinchu. Critical dependency; alternate supplier unknown.", "synthetic": true }
+]

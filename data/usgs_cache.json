@@ -1,0 +1,35 @@
+{
+  "kyushu-2026": {
+    "usgs_id": "us6000tgb9",
+    "place": "The 2026 Kumamoto Region, Japan Earthquake",
+    "magnitude": 6.8,
+    "time": "2026-07-28T07:27:14.640Z",
+    "lat": 32.6043,
+    "lon": 130.6269,
+    "depth_km": 8,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tgb9",
+    "fetched_at": "2026-09-25T18:03:38.738Z"
+  },
+  "kumamoto-2016": {
+    "usgs_id": "us20005iis",
+    "place": "6 km ESE of Kumamoto, Japan",
+    "magnitude": 7,
+    "time": "2016-04-15T16:25:06.220Z",
+    "lat": 32.7906,
+    "lon": 130.7543,
+    "depth_km": 10,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us20005iis",
+    "fetched_at": "2026-09-25T18:03:39.038Z"
+  },
+  "taiwan-2024": {
+    "usgs_id": "us7000m9g4",
+    "place": "15 km S of Hualien City, Taiwan",
+    "magnitude": 7.4,
+    "time": "2024-04-02T23:58:12.173Z",
+    "lat": 23.8356,
+    "lon": 121.5976,
+    "depth_km": 40,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000m9g4",
+    "fetched_at": "2026-09-25T18:03:39.147Z"
+  }
+}

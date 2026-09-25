@@ -1,0 +1,435 @@
+{
+  "A1": {
+    "hash": "ebffdd064845291b81859aa9503ab3e22a4f4f6faa57a7707552ef9bcced0408",
+    "raw": [
+      {
+        "subject_entity_id": null,
+        "claim_type": "event_fact",
+        "statement": "A 7.1-magnitude earthquake struck southern Japan.",
+        "evidence_quote": "The 7.1-magnitude quake that struck southern Japan"
+      },
+      {
+        "subject_entity_id": null,
+        "claim_type": "event_fact",
+        "statement": "The earthquake claimed the lives of 34 people.",
+        "evidence_quote": "which has claimed the lives of 34 people"
+      },
+      {
+        "subject_entity_id": "aisin-kumamoto",
+        "claim_type": "facility_damaged",
+        "statement": "Aisin's Kumamoto plant had some water pipes impacted.",
+        "evidence_quote": "though some water pipes were impacted"
+      },
+      {
+        "subject_entity_id": "aisin-kumamoto",
+        "claim_type": "resumption",
+        "statement": "Aisin plans to resume production once safety and quality are confirmed.",
+        "evidence_quote": "we will resume production as appropriate"
+      },
+      {
+        "subject_entity_id": "toyota",
+        "claim_type": "production_halted",
+        "statement": "Toyota suspended production at three factories in the region.",
+        "evidence_quote": "Toyota has suspended production at three factories in the region"
+      },
+      {
+        "subject_entity_id": "nissan-kyushu",
+        "claim_type": "production_halted",
+        "statement": "Nissan partially suspended production at its two Kyushu vehicle plants.",
+        "evidence_quote": "Nissan has partially suspended production at its two Kyushu vehicle plants"
+      },
+      {
+        "subject_entity_id": "mitsubishi-motors",
+        "claim_type": "production_halted",
+        "statement": "Mitsubishi Motors halted some production at a plant in Okayama.",
+        "evidence_quote": "Mitsubishi Motors said it was halting some production at a plant in Okayama"
+      },
+      {
+        "subject_entity_id": "tsmc-kumamoto",
+        "claim_type": "resumption",
+        "statement": "TSMC began resuming operations at its Kumamoto plant after the quake.",
+        "evidence_quote": "TSMC, has a sprawling plant in Kumamoto. A few hours after the quake, the Taiwanese company said it had begun resuming operations"
+      },
+      {
+        "subject_entity_id": "renesas-kawajiri",
+        "claim_type": "facility_damaged",
+        "statement": "Renesas' Kumamoto plant had fallen ceiling panels, cracks in walls, and water leaks.",
+        "evidence_quote": "which had fallen ceiling panels, cracks in walls and some water leaks"
+      },
+      {
+        "subject_entity_id": "renesas-kawajiri",
+        "claim_type": "resumption",
+        "statement": "Renesas will resume operations at its Kumamoto plant in phases from August 5.",
+        "evidence_quote": "resume operations at one of its Kumamoto plants — which had fallen ceiling panels, cracks in walls and some water leaks — in phases from August 5"
+      },
+      {
+        "subject_entity_id": "sony-kumamoto",
+        "claim_type": "resumption",
+        "statement": "Sony will begin resuming operations at its Kumamoto plant from Tuesday.",
+        "evidence_quote": "Sony, which also has a semiconductor plant in Kumamoto, said it would begin resuming operations there from Tuesday"
+      },
+      {
+        "subject_entity_id": "tel-kyushu",
+        "claim_type": "resumption",
+        "statement": "Tokyo Electron is moving to restart production at its factory in the area next week.",
+        "evidence_quote": "Tokyo Electron, a key producer of chip-making equipment, said it was moving to restart production at its factory in the area next week"
+      },
+      {
+        "subject_entity_id": null,
+        "claim_type": "event_fact",
+        "statement": "Nine people were killed at Nippon Paper Industries’ paper mill.",
+        "evidence_quote": "Nine people were killed at Nippon Paper Industries’ paper mill"
+      },
+      {
+        "subject_entity_id": null,
+        "claim_type": "event_fact",
+        "statement": "Seven people died at Aeon’s shopping mall due to a possible gas explosion.",
+        "evidence_quote": "A further seven died at Aeon’s shopping mall, the biggest in the prefecture, where a possible gas explosion occurred"
+      },
+      {
+        "subject_entity_id": null,
+        "claim_type": "event_fact",
+        "statement": "The earthquake caused nearly half of the deaths in commercial facilities.",
+        "evidence_quote": "nearly half of the deaths occurred in commercial facilities"
+      }
+    ]
+  },
+  "A2": {
+    "hash": "96a9a53fb408530eae75cedbcea0022e3871312da7a0679eb27bdf5a7ee1a3c9",
+    "raw": [
+      {
+        "subject_entity_id": null,
+        "claim_type": "event_fact",
+        "statement": "A 7.1-magnitude earthquake struck Japan's southern island of Kyushu.",
+        "evidence_quote": "The 7.1-magnitude earthquake on 28 July"
+      },
+      {
+        "subject_entity_id": null,
+        "claim_type": "event_fact",
+        "statement": "The earthquake cost at least 38 lives.",
+        "evidence_quote": "cost at least 38 lives"
+      },
+      {
+        "subject_entity_id": "toyota-kyushu-miyata",
+        "claim_type": "production_halted",
+        "statement": "Toyota halted production at three vehicle assembly and component manufacturing plants in Kyushu.",
+        "evidence_quote": "Toyota has temporarily halted production at ⁠three vehicle assembly and component manufacturing plants in Kyushu"
+      },
+      {
+        "subject_entity_id": "nissan-kyushu",
+        "claim_type": "production_halted",
+        "statement": "Nissan halted production at its two Kyushu vehicle plants.",
+        "evidence_quote": "Nissan also temporarily halted production at its two Kyushu vehicle plants"
+      },
+      {
+        "subject_entity_id": "aisin-kumamoto",
+        "claim_type": "production_halted",
+        "statement": "Aisin Corporation idled facilities located in the region temporarily.",
+        "evidence_quote": "Aisin Corporation, a major supplier of drivetrain, chassis, and body parts"
+      },
+      {
+        "subject_entity_id": null,
+        "claim_type": "supply_disruption",
+        "statement": "The earthquake disrupted production of electronic components, including semiconductors.",
+        "evidence_quote": "production of electronic components, including semiconductors, has also been disrupted"
+      },
+      {
+        "subject_entity_id": "toyota",
+        "claim_type": "supplier_relationship",
+        "statement": "Aisin supplies drivetrain, chassis, and body parts to Toyota.",
+        "evidence_quote": "Aisin Corporation, a major supplier of drivetrain, chassis, and body parts to automakers including Toyota"
+      },
+      {
+        "subject_entity_id": "daihatsu",
+        "claim_type": "supplier_relationship",
+        "statement": "Aisin supplies drivetrain, chassis, and body parts to Daihatsu.",
+        "evidence_quote": "Aisin Corporation, a major supplier of drivetrain, chassis, and body parts to automakers including Toyota, Daihatsu"
+      },
+      {
+        "subject_entity_id": "nissan",
+        "claim_type": "supplier_relationship",
+        "statement": "Aisin supplies drivetrain, chassis, and body parts to Nissan.",
+        "evidence_quote": "Aisin Corporation, a major supplier of drivetrain, chassis, and body parts to automakers including Toyota, Daihatsu, Nissan"
+      },
+      {
+        "subject_entity_id": "mitsubishi-motors",
+        "claim_type": "supplier_relationship",
+        "statement": "Aisin supplies drivetrain, chassis, and body parts to Mitsubishi Motors.",
+        "evidence_quote": "Aisin Corporation, a major supplier of drivetrain, chassis, and body parts to automakers including Toyota, Daihatsu, Nissan, and Mitsubishi"
+      },
+      {
+        "subject_entity_id": "mitsubishi-motors",
+        "claim_type": "production_halted",
+        "statement": "Mitsubishi Motors halted production at a plant in Okayama.",
+        "evidence_quote": "Mitsubishi Motors also halted production at a plant in Okayama"
+      }
+    ]
+  },
+  "A3": {
+    "hash": "0db641426603534cc66953b9ee1d25027ac76e5d9efa9353eef8f41a9b08fc0f",
+    "raw": [
+      {
+        "subject_entity_id": null,
+        "claim_type": "event_fact",
+        "statement": "A 7.1-magnitude earthquake struck the Kyushu region on July 28.",
+        "evidence_quote": "7.1-magnitude earthquake that struck the Kyushu region"
+      },
+      {
+        "subject_entity_id": "toyota-kyushu-miyata",
+        "claim_type": "production_halted",
+        "statement": "Toyota paused production for three of its plants in Fukuoka.",
+        "evidence_quote": "Toyota paused production for three of its plants"
+      },
+      {
+        "subject_entity_id": "daihatsu-kyushu",
+        "claim_type": "production_halted",
+        "statement": "Daihatsu shut down its Oita and Kurume factories until July 31.",
+        "evidence_quote": "Daihatsu has also shut down its Oita and Kurume factories"
+      },
+      {
+        "subject_entity_id": "nissan-kyushu",
+        "claim_type": "production_halted",
+        "statement": "Nissan announced temporary shutdowns of two Fukuoka facilities.",
+        "evidence_quote": "Nissan announced temporary shutdowns of two Fukuoka facilities"
+      },
+      {
+        "subject_entity_id": "nissan-kyushu",
+        "claim_type": "supply_disruption",
+        "statement": "Nissan's parts procurement has been delayed.",
+        "evidence_quote": "parts procurement has been delayed"
+      },
+      {
+        "subject_entity_id": "honda-kumamoto",
+        "claim_type": "production_halted",
+        "statement": "Honda brought its Ozu town motorcycle factory to a standstill.",
+        "evidence_quote": "Honda brought its Ozu town motorcycle factory to a standstill"
+      },
+      {
+        "subject_entity_id": "honda-kumamoto",
+        "claim_type": "facility_damaged",
+        "statement": "Honda's factory required repairs after a major water leak.",
+        "evidence_quote": "citing necessary repairs after a major water leak"
+      },
+      {
+        "subject_entity_id": "aisin-kumamoto",
+        "claim_type": "facility_damaged",
+        "statement": "Aisin is assessing damage to its plant in Kumamoto city.",
+        "evidence_quote": "assessing damage to its plant in Kumamoto city"
+      },
+      {
+        "subject_entity_id": "astemo-fukuoka",
+        "claim_type": "facility_damaged",
+        "statement": "Astemo's Fukuoka factory had water, electricity, and gas services cut off.",
+        "evidence_quote": "water, electricity and gas services have been cut off"
+      },
+      {
+        "subject_entity_id": "astemo-fukuoka",
+        "claim_type": "event_fact",
+        "statement": "Three employees at Astemo's Fukuoka factory sustained minor injuries.",
+        "evidence_quote": "three employees had sustained minor injuries at its Fukuoka factory"
+      },
+      {
+        "subject_entity_id": "aisin",
+        "claim_type": "supplier_relationship",
+        "statement": "Aisin is a major parts supplier in the Toyota Group.",
+        "evidence_quote": "Aisin, a major parts supplier in the Toyota Group"
+      },
+      {
+        "subject_entity_id": "astemo-fukuoka",
+        "claim_type": "supplier_relationship",
+        "statement": "Astemo has close ties to Honda Motor.",
+        "evidence_quote": "Astemo, which has close ties to Honda Motor"
+      },
+      {
+        "subject_entity_id": "fcc",
+        "claim_type": "supplier_relationship",
+        "statement": "FCC supplies motorcycle clutches to Honda, Yamaha, Kawasaki, and Suzuki.",
+        "evidence_quote": "FCC, a major supplier of motorcycle clutches to Honda, Yamaha, Kawasaki and Suzuki"
+      },
+      {
+        "subject_entity_id": null,
+        "claim_type": "event_fact",
+        "statement": "Giken Kogyo stopped production to assess earthquake impact.",
+        "evidence_quote": "Giken Kogyo...has stopped production since July 29"
+      },
+      {
+        "subject_entity_id": null,
+        "claim_type": "event_fact",
+        "statement": "FCC has been closed since July 29 to assess damage.",
+        "evidence_quote": "FCC...has been closed since July 29 to assess damage"
+      }
+    ]
+  },
+  "A4": {
+    "hash": "98d84d602f1616d793427627fa27864e139277a80a85d6e64be05714d1789b3b",
+    "raw": [
+      {
+        "subject_entity_id": null,
+        "claim_type": "event_fact",
+        "statement": "Two powerful earthquakes hit the southwestern island of Kyushu on 14 and 16 April.",
+        "evidence_quote": "Two powerful earthquakes hit the southwestern island of Kyushu"
+      },
+      {
+        "subject_entity_id": "aisin-kumamoto",
+        "claim_type": "production_halted",
+        "statement": "Aisin's Kumamoto plants halted operations due to aftershocks.",
+        "evidence_quote": "two of these have halted operations because of aftershocks"
+      },
+      {
+        "subject_entity_id": "renesas-kawajiri",
+        "claim_type": "production_halted",
+        "statement": "Renesas Kawajiri plant operations have stopped since the earthquake.",
+        "evidence_quote": "operations have stopped since the earthquake"
+      },
+      {
+        "subject_entity_id": "toyota",
+        "claim_type": "production_halted",
+        "statement": "Toyota's domestic assembly lines are being suspended for the second time this year.",
+        "evidence_quote": "Toyota's domestic assembly lines are being suspended for the second time"
+      },
+      {
+        "subject_entity_id": "nissan",
+        "claim_type": "resumption",
+        "statement": "Nissan resumed operations at its two Kyushu plants from 18 April.",
+        "evidence_quote": "Nissan resumed operations at its two Kyushu plants from 18 April"
+      },
+      {
+        "subject_entity_id": "mitsubishi-motors",
+        "claim_type": "production_halted",
+        "statement": "Mitsubishi halted operations at its Mizushima plant from 18 April.",
+        "evidence_quote": "Mitsubishi meanwhile halted operations at its Mizushima plant from 18 April"
+      },
+      {
+        "subject_entity_id": "aisin",
+        "claim_type": "supplier_relationship",
+        "statement": "Aisin supplies Toyota with doors, engines, and other parts.",
+        "evidence_quote": "Aisin Seiki, one of Toyota's key suppliers"
+      },
+      {
+        "subject_entity_id": "renesas",
+        "claim_type": "supplier_relationship",
+        "statement": "Renesas supplies Toyota with semiconductors for engine control units.",
+        "evidence_quote": "Renesas produces semiconductors, key components used in Toyota engine control units"
+      },
+      {
+        "subject_entity_id": "aisin-kumamoto",
+        "claim_type": "facility_damaged",
+        "statement": "Aisin is repairing power systems and other facilities at the Kumamoto factory.",
+        "evidence_quote": "Aisin is repairing power systems and other facilities at the Kumamoto factory"
+      },
+      {
+        "subject_entity_id": "aisin-kumamoto",
+        "claim_type": "resumption",
+        "statement": "Aisin Kyushu is working to quickly resume production of door frames and cast aluminium engine parts.",
+        "evidence_quote": "Aisin Kyushu is also working to quickly resume production"
+      },
+      {
+        "subject_entity_id": "toyota",
+        "claim_type": "supply_disruption",
+        "statement": "Toyota is most affected by the supply chain impact in the Kyushu area.",
+        "evidence_quote": "Toyota Group is most affected"
+      },
+      {
+        "subject_entity_id": "toyota",
+        "claim_type": "resumption",
+        "statement": "Toyota expected to resume production at 18 affected assembly lines between 25 and 28 April.",
+        "evidence_quote": "Toyota announced on Wednesday (20 April) that it expected to resume production"
+      },
+      {
+        "subject_entity_id": "aisin",
+        "claim_type": "supply_disruption",
+        "statement": "Aisin's production halt resulted in a parts shortage for Toyota.",
+        "evidence_quote": "resulting in a parts shortage"
+      },
+      {
+        "subject_entity_id": "nissan",
+        "claim_type": "supply_disruption",
+        "statement": "A parts shortage could temporarily hold up Nissan's production.",
+        "evidence_quote": "a parts shortage could temporarily hold up production"
+      },
+      {
+        "subject_entity_id": "toyota",
+        "claim_type": "event_fact",
+        "statement": "Toyota carries out 39% of its vehicle production in Japan.",
+        "evidence_quote": "Toyota (excluding joint ventures) carries out 39% of its vehicle production in Japan"
+      }
+    ]
+  },
+  "A5": {
+    "hash": "75e71dfc8b73079cc35e0df17749788a4b0a97675a414934da9853fc15e1cea1",
+    "raw": [
+      {
+        "subject_entity_id": null,
+        "claim_type": "event_fact",
+        "statement": "Large earthquakes occurred on 14 and 16 April in Kumamoto.",
+        "evidence_quote": "large earthquakes that occurred on 14 and 16 April"
+      },
+      {
+        "subject_entity_id": "aisin-kumamoto",
+        "claim_type": "production_halted",
+        "statement": "Aisin Seiki halted operations at two factories in Kumamoto.",
+        "evidence_quote": "two of these have halted operations because of the aftershocks"
+      },
+      {
+        "subject_entity_id": "renesas-kawajiri",
+        "claim_type": "production_halted",
+        "statement": "Renesas stopped operations at its Kawajiri plant since 14 April.",
+        "evidence_quote": "operations there have stopped since the earthquake hit on 14 April"
+      },
+      {
+        "subject_entity_id": "toyota",
+        "claim_type": "supply_disruption",
+        "statement": "Toyota's production is affected by Aisin and Renesas supply issues.",
+        "evidence_quote": "production at the Toyota Group"
+      },
+      {
+        "subject_entity_id": "toyota",
+        "claim_type": "production_halted",
+        "statement": "Toyota announced temporary production stoppages due to supply chain impact.",
+        "evidence_quote": "forcing temporary production stoppages at Toyota"
+      },
+      {
+        "subject_entity_id": "nissan",
+        "claim_type": "production_halted",
+        "statement": "Nissan announced temporary production stoppages due to supply chain impact.",
+        "evidence_quote": "forcing temporary production stoppages at Toyota, Nissan"
+      },
+      {
+        "subject_entity_id": "mitsubishi-motors",
+        "claim_type": "production_halted",
+        "statement": "Mitsubishi halted operations at its Mizushima plant from 18 April.",
+        "evidence_quote": "Mitsubishi meanwhile halted operations at its Mizushima plant"
+      },
+      {
+        "subject_entity_id": "nissan-kyushu",
+        "claim_type": "resumption",
+        "statement": "Nissan resumed operations at its two Kyushu plants from 18 April.",
+        "evidence_quote": "Nissan resumed operations at its two Kyushu plants from 18 April"
+      },
+      {
+        "subject_entity_id": "aisin",
+        "claim_type": "supplier_relationship",
+        "statement": "Aisin supplies components to Toyota.",
+        "evidence_quote": "production at the Toyota Group"
+      },
+      {
+        "subject_entity_id": "renesas",
+        "claim_type": "supplier_relationship",
+        "statement": "Renesas supplies semiconductors to Toyota for engine control units.",
+        "evidence_quote": "Semiconductors used in Toyota engine control units"
+      },
+      {
+        "subject_entity_id": "toyota",
+        "claim_type": "resumption",
+        "statement": "Toyota expected to resume production at 18 assembly lines between 25 and 28 April.",
+        "evidence_quote": "expected to resume production at 18 affected assembly lines"
+      },
+      {
+        "subject_entity_id": null,
+        "claim_type": "event_fact",
+        "statement": "No tsunami followed the latest earthquakes in Kumamoto.",
+        "evidence_quote": "there has been no tsunami following these latest earthquakes"
+      }
+    ]
+  }
+}

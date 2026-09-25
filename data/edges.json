@@ -1,0 +1,285 @@
+[
+  {
+    "id": "E1",
+    "from": "aisin-kumamoto",
+    "to": "toyota-kyushu-miyata",
+    "relation": "supplies",
+    "label": "Aisin parts to Toyota",
+    "criticality": "critical",
+    "alt_supplier_known": null,
+    "origin": "PUBLIC_VERIFIED",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C37",
+      "C46",
+      "C52",
+      "C57",
+      "C62"
+    ],
+    "first_seen_event": "kumamoto-2016"
+  },
+  {
+    "id": "E2",
+    "from": "renesas-kawajiri",
+    "to": "toyota-kyushu-miyata",
+    "relation": "supplies",
+    "label": "Renesas ECU chips to Toyota",
+    "criticality": "critical",
+    "alt_supplier_known": null,
+    "origin": "PUBLIC_VERIFIED",
+    "claim_ids": [
+      "C47",
+      "C57",
+      "C63"
+    ],
+    "first_seen_event": "kumamoto-2016"
+  },
+  {
+    "id": "E3",
+    "from": "aisin-kumamoto",
+    "to": "nissan",
+    "relation": "supplies",
+    "label": "Aisin parts to Nissan",
+    "criticality": "moderate",
+    "alt_supplier_known": null,
+    "origin": "PUBLIC_VERIFIED",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "first_seen_event": null
+  },
+  {
+    "id": "E4",
+    "from": "aisin-kumamoto",
+    "to": "mitsubishi-motors",
+    "relation": "supplies",
+    "label": "Aisin parts to Mitsubishi",
+    "criticality": "moderate",
+    "alt_supplier_known": null,
+    "origin": "PUBLIC_VERIFIED",
+    "claim_ids": [
+      "C25"
+    ],
+    "first_seen_event": null
+  },
+  {
+    "id": "E5",
+    "from": "aisin-kumamoto",
+    "to": "acct-lakeshore",
+    "relation": "supplies",
+    "label": "Aisin transmission parts",
+    "criticality": "critical",
+    "alt_supplier_known": false,
+    "origin": "SYNTHETIC",
+    "claim_ids": [
+      "C41",
+      "C48",
+      "C52",
+      "C55"
+    ],
+    "first_seen_event": "kumamoto-2016"
+  },
+  {
+    "id": "E6",
+    "from": "renesas-kawajiri",
+    "to": "acct-voltaic",
+    "relation": "supplies",
+    "label": "Renesas microcontrollers",
+    "criticality": "critical",
+    "alt_supplier_known": null,
+    "origin": "SYNTHETIC",
+    "claim_ids": [
+      "C42",
+      "C56"
+    ],
+    "first_seen_event": "kumamoto-2016"
+  },
+  {
+    "id": "E7",
+    "from": "renesas-kawajiri",
+    "to": "acct-brightline",
+    "relation": "supplies",
+    "label": "Renesas microcontrollers",
+    "criticality": "moderate",
+    "alt_supplier_known": true,
+    "origin": "SYNTHETIC",
+    "claim_ids": [
+      "C42",
+      "C56"
+    ],
+    "first_seen_event": "kumamoto-2016"
+  },
+  {
+    "id": "E8",
+    "from": "toyota-kyushu-miyata",
+    "to": "acct-harborline",
+    "relation": "ships_for",
+    "label": "Harborline ships Toyota Kyushu exports",
+    "criticality": "moderate",
+    "alt_supplier_known": null,
+    "origin": "SYNTHETIC",
+    "claim_ids": [
+      "C43",
+      "C50",
+      "C57",
+      "C58"
+    ],
+    "first_seen_event": "kumamoto-2016"
+  },
+  {
+    "id": "E9",
+    "from": "region:kyushu",
+    "to": "acct-kyushu-warehousing",
+    "relation": "located_in_region",
+    "label": "Insured warehouse in Fukuoka",
+    "criticality": "critical",
+    "alt_supplier_known": null,
+    "origin": "SYNTHETIC",
+    "claim_ids": [],
+    "first_seen_event": null
+  },
+  {
+    "id": "E10",
+    "from": "fcc-uki",
+    "to": "honda",
+    "relation": "supplies",
+    "label": "FCC motorcycle clutches to Honda",
+    "criticality": "moderate",
+    "alt_supplier_known": null,
+    "origin": "PUBLIC_VERIFIED",
+    "claim_ids": [
+      "C39"
+    ],
+    "first_seen_event": null
+  },
+  {
+    "id": "E11",
+    "from": "aisin-kumamoto",
+    "to": "daihatsu",
+    "relation": "supplies",
+    "label": "Aisin parts to Daihatsu",
+    "criticality": "moderate",
+    "alt_supplier_known": null,
+    "origin": "PUBLIC_VERIFIED",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "first_seen_event": null
+  },
+  {
+    "id": "E12",
+    "from": "giken-kogyo",
+    "to": "honda",
+    "relation": "supplies",
+    "label": "Giken Kogyo (Honda-affiliated) parts",
+    "criticality": "moderate",
+    "alt_supplier_known": null,
+    "origin": "INFERRED",
+    "claim_ids": [],
+    "first_seen_event": null
+  },
+  {
+    "id": "E13",
+    "from": "astemo-fukuoka",
+    "to": "honda",
+    "relation": "supplies",
+    "label": "Astemo (close ties to Honda) parts",
+    "criticality": "moderate",
+    "alt_supplier_known": null,
+    "origin": "PUBLIC_VERIFIED",
+    "claim_ids": [
+      "C38"
+    ],
+    "first_seen_event": null
+  },
+  {
+    "id": "E14",
+    "from": "tsmc-kumamoto",
+    "to": "acct-cascade",
+    "relation": "supplies",
+    "label": "Automotive MCUs fabbed at TSMC Kumamoto",
+    "criticality": "critical",
+    "alt_supplier_known": null,
+    "origin": "SYNTHETIC",
+    "claim_ids": [],
+    "first_seen_event": null
+  },
+  {
+    "id": "E15",
+    "from": "sony-kumamoto",
+    "to": "acct-northfield",
+    "relation": "supplies",
+    "label": "Sony image sensors",
+    "criticality": "critical",
+    "alt_supplier_known": false,
+    "origin": "SYNTHETIC",
+    "claim_ids": [],
+    "first_seen_event": null
+  },
+  {
+    "id": "E16",
+    "from": "tel-kyushu",
+    "to": "acct-keystone",
+    "relation": "supplies",
+    "label": "Tokyo Electron tool spares",
+    "criticality": "moderate",
+    "alt_supplier_known": null,
+    "origin": "SYNTHETIC",
+    "claim_ids": [],
+    "first_seen_event": null
+  },
+  {
+    "id": "E17",
+    "from": "fcc-uki",
+    "to": "acct-ridgeway",
+    "relation": "supplies",
+    "label": "FCC clutch packs",
+    "criticality": "critical",
+    "alt_supplier_known": false,
+    "origin": "SYNTHETIC",
+    "claim_ids": [],
+    "first_seen_event": null
+  },
+  {
+    "id": "E18",
+    "from": "honda-kumamoto",
+    "to": "acct-lonestar",
+    "relation": "supplies",
+    "label": "Kumamoto-built Honda motorcycles",
+    "criticality": "moderate",
+    "alt_supplier_known": true,
+    "origin": "SYNTHETIC",
+    "claim_ids": [],
+    "first_seen_event": null
+  },
+  {
+    "id": "E19",
+    "from": "daihatsu-kyushu",
+    "to": "acct-pacific-crest",
+    "relation": "supplies",
+    "label": "Daihatsu vehicles from Kyushu",
+    "criticality": "moderate",
+    "alt_supplier_known": null,
+    "origin": "SYNTHETIC",
+    "claim_ids": [],
+    "first_seen_event": null
+  },
+  {
+    "id": "E20",
+    "from": "tsmc-hsinchu",
+    "to": "acct-northwind",
+    "relation": "supplies",
+    "label": "Wafers fabbed at TSMC Hsinchu",
+    "criticality": "critical",
+    "alt_supplier_known": null,
+    "origin": "SYNTHETIC",
+    "claim_ids": [],
+    "first_seen_event": null
+  }
+]

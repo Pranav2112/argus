@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# article full text: local verification only, never committed
+data/articles/*.txt
+!.env.local.example
