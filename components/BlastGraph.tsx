@@ -2,7 +2,7 @@
 
 import "@xyflow/react/dist/style.css";
 import { useEffect, useMemo, useState } from "react";
-import { Background, Handle, Position, ReactFlow, type Edge as RFEdge, type Node as RFNode, type NodeProps } from "@xyflow/react";
+import { Background, Handle, NodeToolbar, Position, ReactFlow, type Edge as RFEdge, type Node as RFNode, type NodeProps } from "@xyflow/react";
 import type { BlastResult } from "@/lib/blastRadius";
 import type { Account, AccountAlert, Edge, Entity, EventRecord, PriorityTier } from "@/lib/types";
 import { originKind, TIER_COLOR, tierLabel } from "./ui";
@@ -14,6 +14,7 @@ type NodeData = {
   ring: string;
   synthetic?: boolean;
   note?: string;
+  hint?: string;
   visible: boolean;
   faded: boolean;
   kind: "event" | "facility" | "company" | "account";
@@ -23,9 +24,36 @@ const NODE_H = 76;
 const NODE_H_TALL = 104;
 const NODE_GAP = 16;
 
+const CLAIM_WORDS: Record<string, string> = {
+  production_halted: "production halted",
+  facility_damaged: "facility damaged",
+  supply_disruption: "supply disrupted",
+};
+
+function facilityHint(id: string, kind: string, result: BlastResult, fedAccounts: number): string {
+  const claims = result.affected[id];
+  const feeds = fedAccounts ? ` Feeds ${fedAccounts} flagged account${fedAccounts > 1 ? "s" : ""}.` : "";
+  if (!claims) return `No verified disruption claim here; on the dependency path from an affected plant.${feeds}`;
+  const confirmed = claims.some((c) => c.status === "CONFIRMED");
+  const what = [...new Set(claims.map((c) => CLAIM_WORDS[c.claim_type] ?? c.claim_type.replace(/_/g, " ")))].join(", ");
+  const ids = claims.map((c) => c.claim_id).join(", ");
+  const state = result.plantStates[id];
+  const lead =
+    state?.status === "RECOVERED"
+      ? `Recovered: CONFIRMED full restoration (${state.causeClaimId}).`
+      : state?.status === "RECOVERING"
+        ? `Recovering: past-tense resumption verified (${state.causeClaimId}).`
+        : `${confirmed ? "CONFIRMED" : "REPORTED (not yet confirmed)"}: ${what}.`;
+  const scope = kind === "company" ? " Company-level report; specific plant UNKNOWN." : "";
+  return `${lead}${scope} Claims ${ids}.${feeds}`;
+}
+
 function ArgusNode({ data }: NodeProps<RFNode<NodeData>>) {
+  const [hover, setHover] = useState(false);
   return (
     <div
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
       className="w-[220px] overflow-hidden border bg-panel px-3 py-2 transition-opacity duration-500"
       style={{
         height: data.note ? NODE_H_TALL : NODE_H,
@@ -44,6 +72,16 @@ function ArgusNode({ data }: NodeProps<RFNode<NodeData>>) {
       {data.sub && <div className="truncate font-mono text-[11px] text-dim">{data.sub}</div>}
       {data.note && <div className="font-mono text-[10px] leading-tight text-monitor">{data.note}</div>}
       <Handle type="source" position={Position.Right} style={{ opacity: 0 }} />
+      {data.hint && (
+        <NodeToolbar isVisible={hover && data.visible} position={data.kind === "account" ? Position.Left : Position.Top} offset={8}>
+          <div
+            className="pointer-events-none max-w-[260px] border bg-bg px-2.5 py-1.5 font-mono text-[11px] leading-snug text-ink shadow-lg"
+            style={{ borderColor: data.ring === "#232a36" ? "#3a4352" : data.ring }}
+          >
+            {data.hint}
+          </div>
+        </NodeToolbar>
+      )}
     </div>
   );
 }
@@ -95,6 +133,11 @@ export default function BlastGraph({
         if (!cur || RANK[al.tier] > RANK[cur]) nodeTier.set(n, al.tier);
       }
     }
+    const fed = new Map<string, number>();
+    for (const al of result.alerts) {
+      if (al.tier === "NO ACTION") continue;
+      for (const n of new Set(al.path.slice(0, -1))) fed.set(n, (fed.get(n) ?? 0) + 1);
+    }
     const alertById = new Map(result.alerts.map((a) => [a.account.id, a]));
     const entById = new Map(entities.map((e) => [e.id, e]));
     const hl = selected ? new Set([EVENT_NODE, ...selected.path, selected.account.id]) : null;
@@ -117,6 +160,9 @@ export default function BlastGraph({
             title: event.title,
             sub: `M${event.magnitude ?? "UNKNOWN"} · USGS`,
             ring: "#5aa9e6",
+            hint: `M${event.magnitude ?? "UNKNOWN"} (USGS). ${affected.length} facilit${affected.length === 1 ? "y" : "ies"} with a verified disruption claim; ${
+              result.alerts.filter((a) => a.tier !== "NO ACTION").length
+            } account(s) flagged.`,
             kind: "event",
             visible: true,
             faded: false,
@@ -127,6 +173,7 @@ export default function BlastGraph({
             title: al.account.name,
             sub: al.recovery ? `${tierLabel(al)} · ${al.recovery.status === "RECOVERED" ? "recovered" : "recovering"} (${al.recovery.claimId})` : al.tier,
             note: al.direct ? DIRECT_LABEL : undefined,
+            hint: `${al.resolved ? "RESOLVED" : al.tier}: ${al.headline}`,
             ring: TIER_COLOR[al.tier],
             kind: "account",
             synthetic: true,
@@ -142,6 +189,7 @@ export default function BlastGraph({
               ? `${result.plantStates[id] && result.plantStates[id].status !== "DISRUPTED" ? result.plantStates[id].status : "affected"} · ${result.affected[id].length} claim(s)`
               : e?.type,
             ring: t ? TIER_COLOR[t] : "#232a36",
+            hint: facilityHint(id, e?.type ?? "company", result, fed.get(id) ?? 0),
             kind: e?.type ?? "company",
             visible: step >= c,
             faded: false,
@@ -155,6 +203,7 @@ export default function BlastGraph({
           if (data.kind === "account" && demo.step < demo.seq.length) {
             data.ring = "#5aa9e6";
             data.sub = "SYNTHETIC insured account";
+            data.hint = undefined;
           }
         }
         nodes.push({ id, type: "argus", position: { x: c * 290, y }, data, draggable: false });

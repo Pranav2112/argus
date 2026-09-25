@@ -97,7 +97,7 @@ export default function Command({ bundle }: { bundle: Bundle }) {
     <div className="flex h-screen flex-col">
       <header className="flex items-center gap-4 border-b border-line bg-panel px-4 py-2">
         <span className="font-mono text-sm font-bold tracking-[0.3em] text-accent">ARGUS</span>
-        <span className="text-xs text-dim">Chubb sees where an event happened. ARGUS shows where its consequences travel.</span>
+        <span className="text-xs text-dim">Traditional systems see where an event happened. ARGUS shows where its consequences travel.</span>
         <Link
           href="/event/kyushu-2026?demo=1"
           className="ml-auto border border-accent bg-accent/15 px-3 py-1 font-mono text-[11px] font-semibold tracking-wider text-accent hover:bg-accent/25"
